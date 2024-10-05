@@ -1,2 +1,2 @@
 # Pagina-Corp
-Pagina web de jixcorp
+Pagina web jixwear
