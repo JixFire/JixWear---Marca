@@ -945,7 +945,7 @@ h3 {
 /*-------- 10. Testimonial area starts-----------*/
 /* Ajustes globales */
 
-.product-container {
+.product-container09 {
     height: fit-content;
     width: 100%;
     /*background-color: #2e2e2e;
@@ -961,7 +961,7 @@ h3 {
     /*overflow: hidden;  Evita el desplazamiento horizontal */
 }
 
-.product-container::before {
+.product-container09::before {
     content: "";
     position: absolute;
     top: 0;
@@ -974,11 +974,11 @@ h3 {
     box-sizing: border-box; /* Asegura que el pseudo-elemento respete el padding del contenedor */
 }
 
-.product-container:hover .product-image {
+.product-container09:hover .product-image09 {
     transform: scale(1.05);
 }
 
-.product-container::after {
+.product-container09::after {
     content: "NEXT";
     -webkit-text-stroke: 2px white;
     color: transparent;
@@ -992,7 +992,7 @@ h3 {
     opacity: 0.35;
 }
 
-.top-line {
+.top-line09 {
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -1001,22 +1001,22 @@ h3 {
     margin-bottom: 3rem;
 }
 
-.logo {
+.logo09 {
     height: 100%;
 }
 
-.rating {
+.rating09 {
     height: 20px;
     width: fit-content;
     display: flex;
 }
 
-.icon {
+.icon09 {
     height: 100%;
     margin-left: 5px;
 }
 
-.product-image {
+.product-image09 {
     width: 80%;
     filter: drop-shadow(0px 18px 25px #ffffff93);
     z-index: 2;
@@ -1024,7 +1024,7 @@ h3 {
     transition: 0.5s;
 }
 
-.product-info {
+.product-info09 {
     color: white;
     display: flex;
     justify-content: space-between;
@@ -1032,13 +1032,13 @@ h3 {
     width: 100%;
 }
 
-.title {
+.title09 {
     color: rgb(255, 255, 255);
     font-weight: 550;
     font-size: 24px;
 }
 
-.price {
+.price09 {
     color: #ffffff;
     padding-top: 5px;
     font-size: 19px;
@@ -1046,14 +1046,14 @@ h3 {
     font-weight: 400;
 }
 
-.variant-selector {
+.variant-selector09 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.variant {
+.variant09 {
     color: white;
     font-weight: 400;
     font-size: 19px;
@@ -1069,11 +1069,11 @@ h3 {
     transition: 0.5s;
 }
 
-.variant:hover {
+.variant09:hover {
     box-shadow: 0px 3px 8px #ffffff71;
 }
 
-.add-to-cart {
+.add-to-cart09 {
     width: 100%;
     height: 60px;
     display: flex;
@@ -1089,7 +1089,7 @@ h3 {
     transition: 0.5s;
 }
 
-.add-to-cart:hover {
+.add-to-cart09:hover {
     background-color: #b1b1b1;
 }
 
