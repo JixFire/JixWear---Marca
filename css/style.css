@@ -1,0 +1,1329 @@
+
+
+
+/*Como va
+
+
+    1. Default css
+    2. Preloader css
+    3. Mouse Animation css
+    4. Nav Area css
+    5. Banner Area css
+    6. About Area css
+    7. Services Area css
+    8. Number Area css
+    9. Portfolio Area css
+    10. Testimonial Area css
+    11. Contact Area css
+    12. Brand Area css
+    13. Footer Area css
+
+
+
+
+*/
+
+/*--- 1. Default css strats---*/
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333333;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #333333;
+    font-weight: 600;
+}
+
+p {
+    letter-spacing: 0;
+    line-height:1.8;
+}
+
+a{
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:focus{
+    outline:none;
+    text-decoration: none;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding: 60px 0;
+}
+
+.section-header{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-header h2 {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.line-one {
+    height: 1px;
+    width: 100px;
+    background: #C5B358;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*---Default css ends---*/
+
+/*-------------- 2. Preloader css starts ---------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #C5B358;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0; }
+    50% {
+        opacity: 1; }
+    100% {
+        transform: scale(1);
+        opacity: 0; }
+}
+
+
+/*-------------- Preloader css ends ---------------*/
+
+/*--- 3. Mouse animation css starts---*/
+
+@-webkit-keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+.mouse-scroll {
+    position: absolute;
+    left:48%;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-top: 10%;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.mouse-scroll .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 60px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #ffffff;
+    border-radius: 23px;
+}
+
+.mouse-scroll .mouse .mouse-movement {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #ffffff;
+    border-radius: 50%;
+    -webkit-animation: scroll-ani 2s linear infinite;
+    animation: scroll-ani 2s linear infinite;
+}
+
+/*---mouse animation ends---*/
+
+/*---------- 4. Nav area css starts -------------*/
+
+.nav-area{
+    height: 65px;
+}
+
+.nav-area.sticky_navigation{
+    background: #ffffff;
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-top: 15px;
+}
+
+.sticky_navigation{
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out ;
+    transition: all 0.4s ease-out ;
+    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.sticky_navigation .main-menu{
+    margin-top: 0;
+}
+
+.sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
+    color: #ffffff;
+}
+
+.sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
+    color: #C5B358;
+}
+
+.sticky_navigation .nav li a {
+    color: #333333;
+}
+
+.sticky_navigation .nav li.active a{
+    color: #C5B358;
+}
+
+.sticky_navigation .nav li.active::before {
+    border-top: 1px solid #C5B358;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+.sticky_navigation .nav li.active::after {
+    border-bottom: 1px solid #C5B358;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.sticky_navigation .navbar-brand:hover{
+    color: #ffffff;
+}
+
+.main-menu{
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+}
+
+.navbar{
+    border:0;
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: block;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.logo {
+    padding: 5px;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-right li{
+    display: inline-block;
+    float: none;
+}
+
+.navbar-right li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-right li.active a{
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus{
+    background: none;
+}
+
+.navbar-toggle .icon-bar{
+    background: #033D75;
+}
+
+/*---------- Nav area css ends -------------*/
+
+/*----------- 5. Banner area css starts--------------*/
+
+
+.banner-area{
+    background-image: url(../images/home/FONDO01.png); /*--edit image--*/
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+}
+
+.banner-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    content: '';
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.banner-table{
+    display: table;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.welcome-text .intro h2 {
+    color: rgb(255, 255, 255);
+    font-size: 85px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+    background-color: #fff;
+}
+
+.banner-btn {
+    background: #C5B358;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.banner-btn:hover, .banner-btn:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.welcome-text h3 {
+    color: #fff;
+    text-transform: uppercase;
+}
+.resolucion {
+    width: 100%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 750px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: 100;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/*---------Banner area css ends--------------*/
+
+/*---------- 6. Acerca area css starts---------------*/
+
+.about-text-left h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #212121;
+    line-height: 1;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.about-text-left h3 {
+    color: #212121;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+.about-text-left p{
+    text-align: right;
+    font-size: 13px;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+.about-text-left a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #C5B358;
+    padding: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+.about-text-right {
+    margin-top: 90px;
+}
+
+.about-text-left {
+    margin-top: 90px;
+}
+
+.about-text-left p {
+    text-align: right;
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 50px;
+}
+
+.skillbar {
+    margin-bottom: 24px;
+    position: relative;
+    width: 100%;
+    display: block
+}
+
+.skillbar .skillbar-title {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.skillbar .skillbar-percent {
+    float: right;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.skillbar-bar {
+    background-color: #ededed;
+    width: 100%;
+    height: 5px
+}
+
+.skillbar-bar .skillbar-child {
+    width: 0;
+    height: 100%;
+    background-color: #606060;
+    -webkit-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color
+}
+
+.about-text-left {
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0; /* Elimina rellenos internos */
+}
+.about-text-left p,
+.about-text-left ul {
+    margin: 0; /* Elimina márgenes en párrafos y listas */
+    padding: 0; /* Elimina rellenos en párrafos y listas */
+    text-align: justify; /* Justifica el texto */
+}
+
+
+/*-------About area css ends--------------*/
+
+/*---------------7. Valores area Starts--------------*/
+
+.product-container05 {
+    display: grid; /* Cambiado a grid para alinear productos en filas y columnas */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    grid-template-rows: auto; /* Las filas se ajustan automáticamente */
+    gap: 20px; /* Espacio entre los productos */
+    margin: 20px auto; /* Margen automático para centrar el contenedor en la página */
+    justify-items: center; /* Centra los productos horizontalmente */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.product05 {
+    width: 300px; /* Ancho fijo del contenedor */
+    height: 500px; /* Altura fija del contenedor */
+    display: flex;
+    flex-direction: column; /* Distribuye los elementos en columna */
+    justify-content: space-between; /* Distribuye el espacio entre elementos */
+    align-items: center; /* Centra todos los elementos horizontalmente */
+    margin-bottom: 20px; /* Espacio entre las filas de productos */
+    background-color: #f9f9f9; /* Fondo opcional para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para resaltar el contenedor */
+    padding: 10px; /* Espacio interno para que no se peguen los elementos a los bordes */
+}
+
+.product05 img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: 200px; /* Ajusta la altura para que sea consistente */
+    object-fit: cover; /* Mantiene proporciones y recorta si es necesario */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
+}
+
+.product05 img:hover {
+    transform: scale(1.1); /* Zoom de 10% al pasar el cursor */
+}
+
+.color-options05 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.color-options05 span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.color-options05 span:hover {
+    border: 2px solid #000;
+}
+
+h3 {
+    min-height: 40px; /* Asegura que el título tenga una altura mínima */
+    margin: 10px 0; /* Espacio superior e inferior del título */
+    text-align: center; /* Centra el texto del título */
+}
+
+.price05 {
+    font-weight: bold;
+    font-size: 2.5rem; /* Tamaño de fuente para el precio */
+    text-align: center; /* Centra el precio */
+    margin-top: 10px; /* Añade un margen superior para el precio */
+}
+
+/* Estilos para el botón de compra */
+.buy-button05 {
+    display: inline-block; /* Para que tenga dimensiones definidas */
+    padding: 10px 20px; /* Espacio interno para el botón */
+    background-color: #C5B358; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px; /* Espacio superior para separación */
+    transition: background-color 0.3s; /* Transición suave para el color */
+}
+
+.buy-button05:hover {
+    background-color: #a7a7a7; /* Color de fondo al pasar el cursor */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .product-container05 {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container05 {
+        grid-template-columns: 1fr; /* Una columna en pantallas extra pequeñas */
+    }
+}
+
+
+/*--------------- Services area ends --------------*/
+
+/*-------- 8. Number area css starts-----------*/
+
+.number-area {
+	background: #C5B358;
+	color: #fff;
+}
+
+.counter {
+	font-size: 45px;
+	color: #fff;
+}
+
+.single-number i {
+	font-size: 35px;
+}
+
+.single-number p {
+	font-size: 18px;
+}
+
+/*--------Number area ends-----------*/
+
+/*-------------- 9. Portfolio area starts-----------*/
+
+
+.por-text-details .col-xs-4 p {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #E91E63;
+}
+
+.mfp-zoom-out .mfp-with-anim {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.mfp-zoom-out.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.mfp-zoom-out.mfp-ready .mfp-with-anim {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.mfp-zoom-out.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+.mfp-zoom-out.mfp-removing .mfp-with-anim {
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0;
+}
+.mfp-zoom-out.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+.por-text h2 {
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 22px;
+	margin-bottom: 15px;
+	border-bottom: 3px solid #E91E63;
+	padding-bottom: 10px;
+}
+
+.white-popup {
+	position: relative;
+	background: #FFF;
+	padding: 30px;
+	width: auto;
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+.por-text-details .col-xs-4 p {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.hovereffect {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	background: rgba(233,30,99,0.9);
+}
+
+.hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 3em;
+	text-align: left;
+}
+
+.hovereffect img {
+	display: block;
+	position: relative;
+	max-width: none;
+	width: calc(100% + 60px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, -webkit-transform 0.45s;
+	-o-transition: opacity 0.35s, transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s, -webkit-transform 0.45s;
+	-webkit-transform: translate3d(-40px,0,0);
+	transform: translate3d(-40px,0,0);
+}
+
+.hovereffect h2 {
+	text-transform: uppercase;
+	color: rgb(129, 127, 127);
+	position: relative;
+	font-size: 17px;
+	background-color: transparent;
+	padding: 5% 0 10px 0;
+	text-align: left;
+	opacity: 0;
+}
+
+.hovereffect:hover h2 {
+	color: #fff;
+	opacity: 1;
+}
+
+.hovereffect .overlay:before {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	border: 1px solid #fff;
+	content: '';
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, -webkit-transform 0.45s;
+	-o-transition: opacity 0.35s, transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s, -webkit-transform 0.45s;
+	-webkit-transform: translate3d(-20px,0,0);
+	transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+	color: rgb(253, 253, 253);
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, -webkit-transform 0.45s;
+	-o-transition: opacity 0.35s, transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s, -webkit-transform 0.45s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.no-pad {
+	padding: 0;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 12200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /*inicio del carrusel de imagenes*/
+
+  .carousel-container01 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel01 {
+    display: flex;
+    justify-content: space-between;
+    animation: slide 30s linear infinite;
+  }
+  
+  .carousel-item01 {
+    flex: 0 0 auto;
+    width: 16%; /* 100% dividido entre los 6 productos */
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.5s ease; /* Transición suave para el efecto de zoom */
+  }
+
+  .carousel-item01:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al 105% */
+  }
+  
+  .product-image01 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen mantenga sus proporciones dentro del tamaño */
+    border-radius: 20px; /* Borde redondeado de las imágenes */
+  }
+  
+  .view-all-container01 {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px; /* Asegúrate de que haya suficiente espacio */
+  }
+  
+  .view-all-button01 {
+    display: inline-block; /* Asegura que el botón se comporte como un bloque en línea */
+    padding: 10px 20px;
+    background-color: #C5B358; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    text-decoration: none; /* Sin subrayado en el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  }
+  
+  .view-all-button01:hover {
+    background-color: #606060; /* Cambia el color de fondo al pasar el cursor */
+    outline: none; /* Sin borde azul al hacer hover */
+  }
+/*--------------Portfolio area Ends-----------*/
+
+/*-------- 10. Testimonial area starts-----------*/
+/* Ajustes globales */
+
+.product-container {
+    height: fit-content;
+    width: 100%;
+    /*background-color: #2e2e2e;
+    box-shadow: 0px 11px 29px rgba(255, 197, 197, 0.2);*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    box-sizing: border-box;
+    margin: 2rem auto; /* Añadido margen automático */
+    /*overflow: hidden;  Evita el desplazamiento horizontal */
+}
+
+.product-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 15px;
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+    box-sizing: border-box; /* Asegura que el pseudo-elemento respete el padding del contenedor */
+}
+
+.product-container:hover .product-image {
+    transform: scale(1.05);
+}
+
+.product-container::after {
+    content: "NEXT";
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    font-weight: 900;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 130px;
+    letter-spacing: 2px;
+    opacity: 0.35;
+}
+
+.top-line {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    height: 100%;
+}
+
+.rating {
+    height: 20px;
+    width: fit-content;
+    display: flex;
+}
+
+.icon {
+    height: 100%;
+    margin-left: 5px;
+}
+
+.product-image {
+    width: 80%;
+    filter: drop-shadow(0px 18px 25px #ffffff93);
+    z-index: 2;
+    margin-bottom: 3rem;
+    transition: 0.5s;
+}
+
+.product-info {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+    font-size: 24px;
+}
+
+.price {
+    color: #ffffff;
+    padding-top: 5px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.variant-selector {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.variant {
+    color: white;
+    font-weight: 400;
+    font-size: 19px;
+    width: 45%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.variant:hover {
+    box-shadow: 0px 3px 8px #ffffff71;
+}
+
+.add-to-cart {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #ffffff;
+    box-shadow: 0px 18px 25px rgba(255, 255, 255, 0.25);
+    transition: 0.5s;
+}
+
+.add-to-cart:hover {
+    background-color: #b1b1b1;
+}
+
+/*-------Testimonial area ends----------*/
+
+/*------ 11. Contact area starts-------*/
+
+.subscribe-section {
+    background-color: #111;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.subscribe-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:     #FFF;
+}
+
+.subscribe-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: inline-flex;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 14px;
+}
+
+.subscribe-form button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.subscribe-form button:hover {
+    background-color: #5c5c5c;
+}
+
+
+/*-------- Contact area ends----------- */
+
+/*-------- 12. Brand area starts-----------*/
+
+
+.services01 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en caso de que no haya suficiente espacio */
+  }
+  
+  .service01 {
+    text-align: center;
+    max-width: 200px;
+    flex: 1; /* Permite que cada servicio ocupe un espacio flexible */
+    margin: 10px; /* Espacio entre los servicios */
+  }
+  
+  .service01 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .service01 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .service01 p {
+    font-size: 14px;
+    color: #555;
+  }
+
+/*--------Brand area ends-----------*/
+
+.section {
+    padding: 20px; /* Agrega un relleno de 20px dentro de cada sección */
+  }
+
+/*--------------13. Footer area starts -------------*/
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper .footer-widget {
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
+    padding: 0 12px;
+  }
+  
+  .wrapper .footer-widget:nth-child(1) {
+    width: calc(40% - 50px);
+    margin-right: 15px;
+  }
+  
+  .wrapper .footer-widget .logo {
+    margin-bottom: 30px;
+    vertical-align: middle;
+  }
+  
+  .wrapper .footer-widget p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .wrapper .footer-widget .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .wrapper .footer-widget .socials li {
+    list-style: none;
+  }
+  
+  .wrapper .footer-widget .socials li a {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: rgba(3, 127, 243, 0.5);
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+  }
+  
+  .wrapper .footer-widget .socials li a:hover {
+    background-color: #037ef3;
+  }
+  
+  .wrapper .footer-widget h6 {
+    color: #585978;
+    margin: 10px 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .wrapper .footer-widget .links li {
+    list-style: none;
+  }
+  
+  .wrapper .footer-widget .links li a {
+    color: #585978;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 32px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .wrapper .footer-widget .links li a:hover {
+    color: #037ef3;
+  }
+  
+  .copyright-wrapper {
+    padding: 20px 0;
+    border-top: 1px solid rgba(88, 89, 120, 0.4);
+  }
+  
+  .copyright-wrapper p {
+    color: rgba(88, 89, 120, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .copyright-wrapper p a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+  }
+  
+  .copyright-wrapper p a:hover {
+    color: #037ef3;
+  }
+  
+/*--------------- Footer area ends -------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
