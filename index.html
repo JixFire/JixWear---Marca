@@ -19,7 +19,8 @@
 
 <!--Titulo de la plantilla del navegador-->
     <title> JixWear </title>
-
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/html5--" href="/images/home/html-5.png">
 
     <!--========== Theme Fonts ==========-->
 <!-- FOOTER -->
@@ -114,10 +115,10 @@ controles deslizantes y sugerencias para guiar la atencion-->
                                 <nav>
                                     <ul class="nav navbar-nav navbar-right">
                                         <li class="active"><a class="smooth-menu" href="#home">Inicio</a></li>
-                                        <li><a class="smooth-menu" href="#about">Acerca</a></li>
-                                        <li><a class="smooth-menu" href="#services">Valores</a></li>
-                                        <li><a class="smooth-menu" href="#productos">Colecciones</a></li>
-                                        <li><a class="smooth-menu" href="#testimonial">Tendencia</a></li>
+                                        <li><a class="smooth-menu" href="#main-content-1">Categorias</a></li>
+                                        <li><a class="smooth-menu" href="#Productos">Productos</a></li>
+                                        <li><a class="smooth-menu" href="#Colecciones">Colecciones</a></li>
+                                        <li><a class="smooth-menu" href="#DESTACADOS">Destacados</a></li>
                                         <li><a class="smooth-menu" href="#contact">Contacto</a></li>
                                     </ul>
                                 </nav>
@@ -161,14 +162,14 @@ controles deslizantes y sugerencias para guiar la atencion-->
                                         </span>
                                     </h1>
 
-                                    <a href="#about" class="banner-btn">Mas Informacion</a>
+                                    <a href="#main-content-1" class="banner-btn">Mas Informacion</a>
 
 
                                 </section>
 
                                 <div class="clearfix"></div>
                                 <!--Desplazamiento del mouse oculto-->
-                                <a class="mouse-scroll hidden-xs" href="#about">
+                                <a class="mouse-scroll hidden-xs" href="#main-content-1">
                                     <span class="mouse">
                                         <span class="mouse-movement"></span>
                                     </span>
@@ -183,12 +184,13 @@ controles deslizantes y sugerencias para guiar la atencion-->
     <!--Banner area fin  -->
 
     <!--Inicia barra acerca de las habilidades del area-->
+    <div id="main-content-1" class="Categorias"></div>
     <main class="main-content-1">
         <section class="container container-features">
             <div class="card-feature">
                 <i class="fa-solid fa-plane-up"></i>
                 <div class="feature-content">
-                    <span>Envío gratuito a nivel mundial</span>
+                    <span>Envío gratuito</span>
                     <p>En pedido superior a $150</p>
                 </div>
             </div>
@@ -216,30 +218,56 @@ controles deslizantes y sugerencias para guiar la atencion-->
         </section>
 
         <section class="container top-categories">
-            <h1 class="heading-1">Mejores Categorías</h1>
+            <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
+                <p class="line-one"></p>
+                <h2>MEJORES CATEGORIAS</h2>
+                <p class="line-one"></p>
+            </div>
             <div class="container-categories">
-                <div class="card-category category-moca">
-                    <p>Mocambo</p>
-                    <span class="ver-mas" onclick="window.location.href='pagina-cafe-moca.html';">Ver más</span> <!-- Cambia la URL según sea necesario -->
+                <div class="card-category">
+                    <div class="image-container">
+                        <img src="/images/home/7.jpg" alt="Mocambo" class="category-image">
+                        <div class="overlay">
+                            <p class="category-text">Mocambo</p>
+                            <span class="ver-mas" onclick="window.location.href='pagina-cafe-moca.html';">Ver más</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-category category-expreso">
-                    <p>Opa</p>
-                    <span class="ver-mas" onclick="window.location.href='pagina-expreso-americano.html';">Ver más</span> <!-- Cambia la URL según sea necesario -->
+                <div class="card-category">
+                    <div class="image-container">
+                        <img src="/images/home/4.jpg" alt="Opa" class="category-image">
+                        <div class="overlay">
+                            <p class="category-text">Opa</p>
+                            <span class="ver-mas" onclick="window.location.href='pagina-expreso-americano.html';">Ver más</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-category category-capuchino">
-                    <p>Smoke</p>
-                    <span class="ver-mas" onclick="window.location.href='pagina-capuchino.html';">Ver más</span> <!-- Cambia la URL según sea necesario -->
+                <div class="card-category">
+                    <div class="image-container">
+                        <img src="/images/home/12.jpg" alt="Smoke" class="category-image">
+                        <div class="overlay">
+                            <p class="category-text">Smoke</p>
+                            <span class="ver-mas" onclick="window.location.href='pagina-capuchino.html';">Ver más</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
+        
 
-        <div class="container top-products">
-            <h2>Mejores Categorías</h2>
+        
+        <div id="Productos" class="Productos">
+            <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
+                <p class="line-one"></p>
+                <h2>PRODUCTOS</h2>
+                <p class="line-one"></p>
+            </div>
             <div class="container-options">
-                <span onclick="window.location.href='destacados.html'">Destacados</span>
+                <span onclick="window.location.href='destacados.html'">Mas Destacados</span>
                 <span onclick="window.location.href='mas-recentes.html'">Más recientes</span>
-                <span onclick="window.location.href='mejores-vendidos.html'">Mejores Vendidos</span>
+                <span onclick="window.location.href='mejores-vendidos.html'">Mas vendidos</span>
+            </div>
             </div>
         </div>
 
@@ -423,7 +451,7 @@ controles deslizantes y sugerencias para guiar la atencion-->
 
 	<!--Portfolio Area Starts-->
     <!--Aqui se crea la identificacion de la clase -->
-	<div id="productos" class="portfolio-area section-padding">
+	<div id="Colecciones" class="Productos-colecciones">
         <!--Aqui se crea el contenedor de las columnas-->
 		<div class="container">
             <!--Aqui se crea una linea la cual mantiene el titulo principal del contenido-->
@@ -494,13 +522,13 @@ controles deslizantes y sugerencias para guiar la atencion-->
 
 	<!--Testimonios Seccion-->
     <!--Aqui se crea la identicicacion de la clase testimonio-->
-    <div class="testimonial section-padding" id="testimonial">
+    <div class="Productos-destacados" id="DESTACADOS">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-header wow fadeInDown" data-wow-delay="0.2s">
                         <p class="line-one"></p>
-                        <h2>TENDENCIA</h2>
+                        <h2>DESTACADOS</h2>
                         <p class="line-one"></p>
                     </div>
                 </div>
