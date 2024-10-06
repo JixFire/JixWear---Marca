@@ -353,6 +353,53 @@
     }
   }
 
+  /* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+	.container-features {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+        gap: 1rem; /* Espacio entre tarjetas más pequeño */
+        padding: 1rem; /* Reduce el padding general */
+	}
+
+    /* Ajustes del icono para pantallas móviles */
+    .card-feature i {
+        font-size: 2.5rem; /* Íconos más pequeños para móviles */
+    }
+
+    /* Ajusta el tamaño del contenido en móviles */
+    .feature-content span {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    .feature-content p {
+        font-size: 1.2rem; /* Texto más pequeño */
+    }
+
+	.card-category {
+		height: 15rem;
+	}
+
+	.card-category p {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.card-category span {
+		font-size: 1.5rem;
+	}
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+}
 
 
 

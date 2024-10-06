@@ -1,9 +1,3 @@
-/*!
-Waypoints - 4.0.1
-Copyright (c)2021 Daniel Valencia
-Licensed under the MIT license.
-https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
-*/
 (function() {
   'use strict'
 

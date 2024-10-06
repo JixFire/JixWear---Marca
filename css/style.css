@@ -1,6 +1,3 @@
-
-
-
 /*Como va
 
 
@@ -254,7 +251,7 @@ img {
     -webkit-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out ;
     transition: all 0.4s ease-out ;
-    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(255, 255, 255, 0.25);
     box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
 }
 
@@ -352,7 +349,7 @@ img {
 }
 
 .navbar-toggle .icon-bar{
-    background: #033D75;
+    background: #fcff5d;
 }
 
 /*---------- Nav area css ends -------------*/
@@ -487,203 +484,351 @@ canvas{
 /*---------Banner area css ends--------------*/
 
 /*---------- 6. Acerca area css starts---------------*/
-
-.about-text-left h2 {
-    font-weight: 700;
-    font-size: 36px;
-    color: #212121;
-    line-height: 1;
-    text-align: right;
-    margin-bottom: 5px;
+.main-content-1 {
+    padding-top: 2rem; /* Espacio arriba */
 }
 
-.about-text-left h3 {
-    color: #212121;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: right;
-    margin-bottom: 18px;
-}
-
-.about-text-left p{
-    text-align: right;
-    font-size: 13px;
-    color: #222;
-    margin-bottom: 50px;
-}
-
-.about-text-left a {
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    background: #C5B358;
-    padding: 15px;
-    float: right;
-    text-decoration: none;
-}
-
-.about-text-right {
-    margin-top: 90px;
-}
-
-.about-text-left {
-    margin-top: 90px;
-}
-
-.about-text-left p {
-    text-align: right;
-    font-size: 15px;
-    color: #222;
-    margin-bottom: 50px;
-}
-
-.skillbar {
-    margin-bottom: 24px;
-    position: relative;
-    width: 100%;
-    display: block
-}
-
-.skillbar .skillbar-title {
-    display: inline-block;
-    vertical-align: middle
-}
-
-.skillbar .skillbar-percent {
-    float: right;
-    display: inline-block;
-    vertical-align: middle
-}
-
-.skillbar-bar {
-    background-color: #ededed;
-    width: 100%;
-    height: 5px
-}
-
-.skillbar-bar .skillbar-child {
-    width: 0;
-    height: 100%;
-    background-color: #606060;
-    -webkit-transition-property: width, background-color;
-    -o-transition-property: width, background-color;
-    transition-property: width, background-color
-}
-
-.about-text-left {
-    margin: 0; /* Elimina márgenes externos */
-    padding: 0; /* Elimina rellenos internos */
-}
-.about-text-left p,
-.about-text-left ul {
-    margin: 0; /* Elimina márgenes en párrafos y listas */
-    padding: 0; /* Elimina rellenos en párrafos y listas */
-    text-align: justify; /* Justifica el texto */
-}
-
-
-/*-------About area css ends--------------*/
-
-/*---------------7. Valores area Starts--------------*/
-
-.product-container05 {
-    display: grid; /* Cambiado a grid para alinear productos en filas y columnas */
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
-    grid-template-rows: auto; /* Las filas se ajustan automáticamente */
-    gap: 20px; /* Espacio entre los productos */
-    margin: 20px auto; /* Margen automático para centrar el contenedor en la página */
-    justify-items: center; /* Centra los productos horizontalmente */
-    max-width: 1200px; /* Ancho máximo del contenedor */
-}
-
-.product05 {
-    width: 300px; /* Ancho fijo del contenedor */
-    height: 500px; /* Altura fija del contenedor */
+/* ********************************** */
+/*              FEATURES              */
+/* ********************************** */
+.container-features {
     display: flex;
-    flex-direction: column; /* Distribuye los elementos en columna */
-    justify-content: space-between; /* Distribuye el espacio entre elementos */
-    align-items: center; /* Centra todos los elementos horizontalmente */
-    margin-bottom: 20px; /* Espacio entre las filas de productos */
-    background-color: #f9f9f9; /* Fondo opcional para el contenedor */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para resaltar el contenedor */
-    padding: 10px; /* Espacio interno para que no se peguen los elementos a los bordes */
+    flex-wrap: wrap; /* Permite que las tarjetas pasen a una nueva fila si no hay espacio */
+    justify-content: space-between; /* Distribuye espacio uniformemente entre las tarjetas */
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
-.product05 img {
-    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
-    height: 200px; /* Ajusta la altura para que sea consistente */
-    object-fit: cover; /* Mantiene proporciones y recorta si es necesario */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s ease; /* Transición suave para el efecto de zoom */
-}
-
-.product05 img:hover {
-    transform: scale(1.1); /* Zoom de 10% al pasar el cursor */
-}
-
-.color-options05 {
+.card-feature {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-start; /* Alinea horizontalmente a la izquierda */
+    gap: 3rem;
+    background-color: #fcfcfc;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Sombra más ligera */
+    flex: 1 1 250px; /* Las tarjetas se expanden y encogen dinámicamente, pero tienen un tamaño mínimo de 250px */
+    max-width: 300px; /* Limita el ancho máximo en pantallas grandes */
 }
 
-.color-options05 span {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    border: 1px solid #ddd;
-}
-
-.color-options05 span:hover {
-    border: 2px solid #000;
-}
-
-h3 {
-    min-height: 40px; /* Asegura que el título tenga una altura mínima */
-    margin: 10px 0; /* Espacio superior e inferior del título */
-    text-align: center; /* Centra el texto del título */
-}
-
-.price05 {
-    font-weight: bold;
-    font-size: 2.5rem; /* Tamaño de fuente para el precio */
-    text-align: center; /* Centra el precio */
-    margin-top: 10px; /* Añade un margen superior para el precio */
-}
-
-/* Estilos para el botón de compra */
-.buy-button05 {
-    display: inline-block; /* Para que tenga dimensiones definidas */
-    padding: 10px 20px; /* Espacio interno para el botón */
-    background-color: #C5B358; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    text-align: center; /* Centra el texto dentro del botón */
-    text-decoration: none; /* Elimina el subrayado del texto */
-    border-radius: 5px; /* Bordes redondeados */
-    margin-top: 10px; /* Espacio superior para separación */
-    transition: background-color 0.3s; /* Transición suave para el color */
-}
-
-.buy-button05:hover {
-    background-color: #a7a7a7; /* Color de fondo al pasar el cursor */
-}
-
-/* Media query para pantallas más pequeñas */
+/* Ajustes para pantallas móviles */
 @media (max-width: 768px) {
-    .product-container05 {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas pequeñas */
+    .container-features {
+        justify-content: center; /* Centrar las tarjetas en pantallas más pequeñas */
+    }
+
+    .card-feature {
+        flex: 1 1 100%; /* Las tarjetas ocuparán el 100% del ancho en móviles */
+        max-width: none; /* Remover el max-width para pantallas pequeñas */
     }
 }
 
-@media (max-width: 480px) {
-    .product-container05 {
-        grid-template-columns: 1fr; /* Una columna en pantallas extra pequeñas */
-    }
+.card-feature i {
+    font-size: 2.5rem;
+    color: #f1d883;
 }
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-content span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #030303;
+}
+
+.feature-content p {
+    color: #777;
+    font-weight: 500;
+}
+
+
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+
+.top-categories {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+    padding-left: 2rem 0;
+}
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.category-moca {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('/images/home/7.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-capuchino {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('/images/home/1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-expreso {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('/images/home/5.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.card-category p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.card-category span {
+	font-size: 1.6rem;
+	color: #fff;
+	cursor: pointer;
+}
+
+.card-category span:hover {
+	color: #ffd037;
+}
+
+/* ********************************** */
+/*            TOP PRODUCTS            */
+/* ********************************** */
+.top-products {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.container-options {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.container-options span {
+	color: #ffffff;
+	background-color: #fad05c;
+	padding: 0.7rem 3rem;
+	font-size: 1.4rem;
+	text-transform: capitalize;
+	border-radius: 2rem;
+	cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para hover */
+}
+
+.container-options span:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.container-options span.activo {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+/* Products */
+.container-products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 3rem;
+    padding: 3rem;
+    margin-bottom: 4rem; /* Añadir margen inferior para separar de la siguiente sección */
+    margin: 0 2rem; /* Agregar margen lateral para que no esté pegado a las esquinas */
+}
+
+.card-product {
+	background-color: #fff;
+	padding: 2rem 3rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.container-img {
+	position: relative;
+    width: 100%; /* Asegúrate de que ocupa el 100% del contenedor */
+    height: 300px; /* Establece una altura fija para mantener el tamaño */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+    border-radius: 1rem; /* Borde redondeado para el contenedor de la imagen */
+}
+
+.container-img img {
+	width: 100%;
+    height: 100%; /* Asegúrate de que la imagen ocupa el contenedor */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+}
+
+.container-img .discount {
+	position: absolute;
+	left: 0;
+	background-color: #ecca6b;
+	color: #ffffff;
+	padding: 2px 1.2rem;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+	background-color: #000;
+}
+
+.button-group {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	position: absolute;
+	top: 0;
+	right: -3rem;
+	z-index: -1;
+	transition: all 0.4s ease;
+}
+
+.button-group span {
+	border: 1px solid #e7c554;
+	padding: 0.8rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.button-group span:hover {
+	background-color: #e7c554;
+}
+
+.button-group span i {
+	font-size: 1.5rem;
+	color: #e7c554;
+}
+
+.button-group span:hover i {
+	color: #fff;
+}
+
+.card-product:hover .button-group {
+	z-index: 0;
+	right: -1rem;
+}
+
+.content-card-product {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, min-content);
+	row-gap: 1rem;
+}
+
+.stars {
+	grid-row: 1/2;
+	grid-column: 1/-1;
+}
+
+.stars i {
+	font-size: 1.3rem;
+	color: #e7c554;
+}
+
+.content-card-product h3 {
+	grid-row: 2/3;
+	grid-column: 1/-1;
+
+	font-weight: 400;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.content-card-product h3:hover {
+	color: #e7c554;
+}
+
+.add-cart {
+	justify-self: start;
+	border: 2px solid #e7c554;
+	padding: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.4s ease;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.add-cart:hover {
+	background-color: #e7c554;
+}
+
+.add-cart i {
+	font-size: 1.5rem;
+	color: #e7c554;
+}
+
+.add-cart:hover i {
+	color: #fff;
+}
+
+.content-card-product .price {
+	justify-self: end;
+	align-self: center;
+
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.content-card-product .price span {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-decoration: line-through;
+	color: #777;
+	margin-left: 0.5rem;
+}
+
 
 
 /*--------------- Services area ends --------------*/
@@ -1101,7 +1246,7 @@ h3 {
     background-color: #111;
     color: #ffffff;
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     font-family: Arial, sans-serif;
 }
 
@@ -1184,7 +1329,7 @@ h3 {
 /*--------Brand area ends-----------*/
 
 .section {
-    padding: 20px; /* Agrega un relleno de 20px dentro de cada sección */
+    padding: 0 5px; /* Agrega un relleno de 20px dentro de cada sección */
   }
 
 /*--------------13. Footer area starts -------------*/
@@ -1195,60 +1340,60 @@ h3 {
     height: auto;
     padding-top: 80px;
     background-color: #ffffff;
-  }
-  
-  .container {
+}
+
+.container-1 {
     width: 100%;
-    max-width: 1320px;
-    margin: 0 auto;
+    margin: 0; /* Removido max-width y ajustado a 0 */
     padding: 0 12px;
-  }
-  
-  .wrapper {
+}
+
+.wrapper-1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  
-  .wrapper .footer-widget {
+    width: 100%; /* Asegúrate que ocupe todo el ancho */
+}
+
+.wrapper-1 .footer-widget {
     width: calc(20% - 30px);
     margin: 0 15px 50px;
     padding: 0 12px;
-  }
-  
-  .wrapper .footer-widget:nth-child(1) {
+}
+
+.wrapper-1 .footer-widget:nth-child(1) {
     width: calc(40% - 50px);
     margin-right: 15px;
-  }
-  
-  .wrapper .footer-widget .logo {
+}
+
+.wrapper-1 .footer-widget .logo-01 {
     margin-bottom: 30px;
     vertical-align: middle;
-  }
-  
-  .wrapper .footer-widget p {
+}
+
+.wrapper-1 .footer-widget p {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
-  }
-  
-  .wrapper .footer-widget .socials {
+}
+
+.wrapper-1 .footer-widget .socials {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  }
-  
-  .wrapper .footer-widget .socials li {
+}
+
+.wrapper-1 .footer-widget .socials li {
     list-style: none;
-  }
-  
-  .wrapper .footer-widget .socials li a {
+}
+
+.wrapper-1 .footer-widget .socials li a {
     width: 44px;
     height: 44px;
     margin-right: 10px;
     color: #ffffff;
-    background-color: rgba(3, 127, 243, 0.5);
+    background-color: rgb(228, 197, 97);
     border-radius: 50%;
     font-size: 20px;
     text-decoration: none;
@@ -1256,59 +1401,60 @@ h3 {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-out;
-  }
-  
-  .wrapper .footer-widget .socials li a:hover {
+}
+
+.wrapper-1 .footer-widget .socials li a:hover {
     background-color: #037ef3;
-  }
-  
-  .wrapper .footer-widget h6 {
+}
+
+.wrapper-1 .footer-widget h6 {
     color: #585978;
     margin: 10px 0 35px;
     font-size: 20px;
     font-weight: 600;
-  }
-  
-  .wrapper .footer-widget .links li {
+}
+
+.wrapper-1 .footer-widget .links li {
     list-style: none;
-  }
-  
-  .wrapper .footer-widget .links li a {
+}
+
+.wrapper-1 .footer-widget .links li a {
     color: #585978;
     font-size: 16px;
     text-decoration: none;
     text-transform: capitalize;
     line-height: 32px;
     transition: all 0.3s ease-out;
-  }
-  
-  .wrapper .footer-widget .links li a:hover {
+}
+
+.wrapper-1 .footer-widget .links li a:hover {
     color: #037ef3;
-  }
-  
-  .copyright-wrapper {
+}
+
+.copyright-wrapper {
     padding: 20px 0;
     border-top: 1px solid rgba(88, 89, 120, 0.4);
-  }
-  
-  .copyright-wrapper p {
+    width: 100%; /* Asegúrate que ocupe todo el ancho */
+}
+
+.copyright-wrapper p {
     color: rgba(88, 89, 120, 0.6);
     font-size: 14px;
     font-weight: 500;
     text-align: center;
-  }
-  
-  .copyright-wrapper p a {
+}
+
+.copyright-wrapper p a {
     color: inherit;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s ease-out;
-  }
-  
-  .copyright-wrapper p a:hover {
+}
+
+.copyright-wrapper p a:hover {
     color: #037ef3;
-  }
-  
+}
+
 /*--------------- Footer area ends -------------*/
 
 

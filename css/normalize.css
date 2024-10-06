@@ -274,12 +274,14 @@ select { /* 1 */
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-}
+ button,
+ html [type="button"], /* 1 */
+ [type="reset"],
+ [type="submit"] {
+   appearance: button; /* 2: propiedad estándar */
+   -webkit-appearance: button; /* 2: propiedad prefijada */
+ }
+ 
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -371,10 +373,12 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
+ [type="search"] {
+  appearance: textfield; /* 1: propiedad estándar */
+  -webkit-appearance: textfield; /* 1: propiedad prefijada */
   outline-offset: -2px; /* 2 */
 }
+
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
